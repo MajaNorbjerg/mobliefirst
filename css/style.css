@@ -35,7 +35,10 @@ article h2 {
     color: white;
     margin-top: 4%;
 }
-h3{font-weight: bold;}
+
+h3 {
+    font-weight: bold;
+}
 
 
 
@@ -72,6 +75,40 @@ main article img {
 
 #cafe {
     padding-left: 0.5%
+}
+
+
+
+/* Walk
+....................*/
+
+
+#walk-container {
+    position: relative;
+}
+
+main #nr1 {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+main #nr2 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+main #nr3 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+main #nr4 {
+    position: relative;
+    top: 500px;
+    left: 90px;
 }
 
 
