@@ -17,6 +17,7 @@
     <meta name="description" content="XXX" />
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/burgerstyle.css" rel="stylesheet">
 </head>
 
 
@@ -36,16 +37,34 @@
 -->
     <header>
 
-        <img src="img/kunsthallille.svg" alt="logo" type="file/svg" width="5%">
+        <img src="img/kunsthallille.svg" alt="logo" type="file/svg" width="15%">
         <h1>Kunsthal Aarhus</h1>
+        <nav role="navigation">
+            <div id="burgermenuToggle">
+                <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+                <input type="checkbox" />
 
-        <ul>
-            <li><a href="">Nyheder</a></li>
-            <li><a href="">Udstillinger</a></li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Om</a></li>
-        </ul>
+                <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+                <span></span>
+                <span></span>
+                <span></span>
 
+                <ul id="burgermenu">
+                    <li><a href="">Nyheder</a></li>
+                    <li><a href="">Udstillinger</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Om</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
 
@@ -55,7 +74,37 @@
 ............................................................. 
 -->
     <main>
+        <article>
+            <h2>Udstilling</h2>
+            <img src="" alt="billede">
+            <h3>Titel</h3>
+            <h4>dato</h4>
+            <a href="">Læs mere</a>
+        </article>
 
+        <article>
+            <h2>Udstilling</h2>
+            <img src="" alt="billede">
+            <h3>Titel</h3>
+            <h4>dato</h4>
+            <a href="">Læs mere</a>
+        </article>
+
+        <article>
+            <h2>Udstilling</h2>
+            <img src="" alt="billede">
+            <h3>Titel</h3>
+            <h4>dato</h4>
+            <a href="">Læs mere</a>
+        </article>
+
+        <article>
+            <h2>Udstilling</h2>
+            <img src="" alt="billede">
+            <h3>Titel</h3>
+            <h4>dato</h4>
+            <a href="">Læs mere</a>
+        </article>
 
     </main>
 
