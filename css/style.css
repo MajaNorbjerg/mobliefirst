@@ -35,7 +35,10 @@ article h2 {
     color: white;
     margin-top: 4%;
 }
-h3{font-weight: bold;}
+
+h3 {
+    font-weight: bold;
+}
 
 
 
@@ -58,7 +61,7 @@ main {
     padding: 1%
 }
 
-main article img {
+main img {
     width: 100%;
 }
 
@@ -74,6 +77,64 @@ main article img {
     padding-left: 0.5%
 }
 
+article a {
+    text-decoration: underline;
+    text-decoration-color: #cb592aff
+}
+
+/* Event
+.............*/
+
+#event-container {
+    position: relative;
+}
+
+#text-block-event {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    height: 76%;
+    width: 60%;
+    background: rgb(0, 0, 0);
+    /*Fallback color*/
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.event h3 {
+    font-size: 1.7em;
+    line-height: 1em;
+    padding-bottom: 0.5em;
+}
+
+.event h4 {
+    font-size: 1.1em;
+    padding-bottom: 0.2em;
+}
+
+.event p {
+    font-size: 0.9em;
+    padding-bottom: 5%;
+
+}
+
+.event a,
+.event a:visited {
+    color: white;
+}
+
+.event h2 {
+    background-color: white;
+    color: black;
+    font-size: 2em;
+}
+
+#dato {
+    padding-left: 0.4em; font-size: 1.1em;
+}
+
 
 
 /* Footer
@@ -83,7 +144,15 @@ footer {
     background-color: #cb592aff;
     color: white;
     padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+footer img {
+    width: 2.5em;
+}
+
 
 
 
