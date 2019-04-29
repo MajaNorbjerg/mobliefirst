@@ -27,6 +27,16 @@ h1 {
     color: #232323;
 }
 
+article h2 {
+    width: 7em;
+    background-color: #cb592aff;
+    padding: 1%;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 4%;
+}
+h3{font-weight: bold;}
+
 
 
 /* Header
@@ -44,13 +54,36 @@ header img {
 /* Main
 .........................................................................*/
 
+main {
+    padding: 1%
+}
 
+main article img {
+    width: 100%;
+}
+
+#flexbox-forside {
+    display: flex;
+}
+
+#arrangement {
+    padding-right: 0.5%
+}
+
+#cafe {
+    padding-left: 0.5%
+}
 
 
 
 /* Footer
 .........................................................................*/
-
+footer {
+    height: 10%;
+    background-color: #cb592aff;
+    color: white;
+    padding: 1%;
+}
 
 
 
