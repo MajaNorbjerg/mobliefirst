@@ -132,7 +132,8 @@ article a {
 }
 
 #dato {
-    padding-left: 0.4em; font-size: 1.1em;
+    padding-left: 0.4em;
+    font-size: 1.1em;
 }
 
 
@@ -147,8 +148,7 @@ article a {
 
 main #nr1 {
     position: absolute;
-    top: 200px;
-    left: 200px;
+    top: 200px;left: 200px;
 }
 
 main #nr2 {
@@ -167,6 +167,68 @@ main #nr4 {
     position: relative;
     top: 500px;
     left: 90px;
+}
+
+
+
+/* Instagram
+..........................*/
+#insta-grid {
+    display: grid;
+    grid: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  
+}
+
+#hornet {
+    grid-row: 1/2;
+    grid-column: 1/2;
+   align-self: stretch;
+
+}
+
+#mapt2019 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: stretch;
+ 
+}
+
+#taeppet {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    align-self: stretch;
+}
+
+#mand {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    align-self: stretch;
+}
+
+#piano {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    align-self: stretch;
+}
+
+#straenge {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+#tre-billeder {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+#skuret {
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+#cafe-kage {
+    grid-row: 3/4;
+    grid-column: 4/5;
 }
 
 
