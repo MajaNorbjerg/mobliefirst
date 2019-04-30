@@ -18,7 +18,7 @@
     <meta name="description" content="XXX" />
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-       <link href="css/burgerstyle.css" rel="stylesheet">
+       <link href="css/burger.css" rel="stylesheet">
 </head>
 
 
@@ -29,33 +29,27 @@
 -->
     <header><img src="img/kunsthallille.svg" alt="logo" type="file/svg" width="15%">
         <h1>Kunsthal Aarhus</h1>
-        <nav role="navigation">
-            <div id="burgermenuToggle">
-                <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-                <input type="checkbox" />
-
-                <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-                <span></span>
-                <span></span>
-                <span></span>
-
-                <ul id="burgermenu">
-                    <li><a href="index.html">Startside</a></li>
-                    <li><a href="">Nyheder</a></li>
-                    <li><a href="museeums-walk.html">Udstillinger</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="">Om</a></li>
-                </ul>
-            </div>
-        </nav>
+        
+        <nav id="menu">
+  <label for="tm" id="toggle-menu">Menu <span class="drop-icon">▾</span></label>
+  <input type="checkbox" id="tm">
+  <ul class="main-menu clearfix">
+    <li><a href="index.html">Startside</a></li>
+    <li><a href="#">Udstillinger
+        <span class="drop-icon">▾</span>
+        <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+      </a>
+      <input type="checkbox" id="sm1">
+      <ul class="sub-menu">
+        <li><a href="museeums-walk.html">Museum Walk</a></li>
+          <li><a href="https://www.fyrebox.com/play/water-from-ganges-river-i_Ddj0jeZ1V">Quiz</a></li>
+        <li><a href="#">Efter besøget</a></li>
+      </ul>
+    </li>
+    <li><a href="events.html">Events</a></li>
+     <li><a href="#">Om Kunsthal Aarhus</a></li>
+  </ul>
+</nav>
 
     </header>
 
