@@ -52,7 +52,8 @@
                     <input type="checkbox" id="sm1">
                     <ul class="sub-menu">
                         <li id="mw"><a href="museeums-walk.html">Museum Walk</a></li>
-                        <li><a href="https://www.fyrebox.com/play/water-from-ganges-river-i_Ddj0jeZ1V">Quiz</a></li>
+                        <li><a href="https://www.fyrebox.com/play/water-from-ganges-river-i_Ddj0jeZ1V" target="_blank">Quiz</a></li>
+                        <!--Tilføjet target blank + id på mw-->
                         <li><a href="#">Efter besøget</a></li>
                     </ul>
                 </li>
@@ -70,35 +71,36 @@
 -->
     <main>
         <section id=guidet-tour>
-            <p id="guide">Guidet tour i udstilling 2</p>
+            <p id="guide">Guidet tour i udstilling 3</p>
             <audio id="audio" src="audio/udstilling-af-kim-boem.m4a" type="audio/m4a" controls preload="auto">
             </audio>
         </section>
         <a href="/museeums-walk.html">Kort</a>
-        <section class="walk-container2">
-            <!-- SLET   <img id="udstilling2" src="img/walk/udstilling2.svg" alt="oversigtskort stueplan">-->
+        <section class="walk-container3">
+            <!--  SLET  <img id="udstilling2" src="img/walk/udstilling2.svg" alt="oversigtskort stueplan">-->
 
 
-            <a href="udstilling3.html"><img class="udstilling-nr" id="udstilling3" src="img/walk/3.svg" alt="udstilling3"></a>
-
-
-            <input id="myCheck" class="check-udstilling" checked="checked" type="checkbox" onclick="myFunction()">
-            <input id="two" type="checkbox" onclick="myTwo()">
-            <input id="three" type="checkbox" onclick="myThree()">
+            <a href="udstilling2.html"><img class="udstilling-nr" id="udstilling-nr2" src="img/walk/2.svg" alt="udstilling2"></a>
 
 
 
 
+            <input id="myCheck3" class="check-udstilling" checked="checked" type="checkbox" onclick="myFunction()">
+
+            <input id="two3" type="checkbox" onclick="myTwo()">
+
+            <input id="three3" type="checkbox" onclick="myThree()">
 
 
 
 
-            <!-- UPS - men forsøgte at undgå java ......................................................................................-->
+
+            <!-- UPS - men forsøgte at undgå java, men kunne ikke finde en løsning, til flere checkbokse ......................................................................................-->
 
 
             <script>
                 function myFunction() {
-                    var checkBox = document.getElementById("myCheck");
+                    var checkBox = document.getElementById("myCheck3");
                     var text = document.getElementById("boem");
                     if (checkBox.checked == true) {
                         boem.style.display = "block";
@@ -109,7 +111,7 @@
                 }
 
                 function myTwo() {
-                    var checkBox = document.getElementById("two");
+                    var checkBox = document.getElementById("two3");
                     var text = document.getElementById("toeren");
                     if (checkBox.checked == true) {
                         toeren.style.display = "block";
@@ -119,7 +121,7 @@
                 }
 
                 function myThree() {
-                    var checkBox = document.getElementById("three");
+                    var checkBox = document.getElementById("three3");
                     var text = document.getElementById("kagedrengen");
                     if (checkBox.checked == true) {
                         kagedrengen.style.display = "block";
@@ -130,6 +132,7 @@
 
             </script>
         </section>
+
 
         <section id="boem">
             <h2>Titel</h2>
@@ -150,9 +153,9 @@
             <h3>Forfatter</h3>
             <img src="/img/coming-out.jpg" alt="kim boem skulptur">
             <p>Tekst om udstillingen her</p>
+
+
         </section>
-
-
         <p>Her er der tekst om udstillingen generelt. Tryk på udstillingen for at få mere info.</p>
 
 

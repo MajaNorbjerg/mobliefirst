@@ -199,7 +199,9 @@ article a {
 /* Udstilling2
 ...........................*/
 
-.walk-container #udstilling3 {
+/*Her er tilføjet et total til den første class*/
+
+.walk-container2 #udstilling3 {
     position: absolute;
     top: 18%;
     left: 88%;
@@ -213,6 +215,7 @@ article a {
     margin-bottom: 1.5em;
 }
 
+/* SLET
 .dot {
     position: absolute;
     width: 4%;
@@ -232,10 +235,95 @@ article a {
     top: 65%;
     left: 83%;
 }
+*/
 
-.walk-container img:checked {
+.walk-container img:active {
     background-color: aqua;
 }
+
+/* Maja tilføjer
+...........................*/
+
+#myCheck {
+    position: relative;
+    top: 150px;
+    left: 50%;
+}
+
+#two {
+    position: relative;
+    top: 200px;
+    left: 5%;
+}
+
+#three {
+    position: relative;
+    top: 250px;
+    left: 59%;
+}
+
+#myCheck3 {
+    position: relative;
+    top: 80px;
+    left: 38%;
+}
+
+#two3 {
+    position: relative;
+    top: 150px;
+    left: 50%;
+}
+
+#three3 {
+    position: relative;
+    top: 275px;
+    left: 46%;
+}
+
+.walk-container2 {
+    position: relative;
+    background-image: url(/img/walk/udstilling2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 340px;
+    width: 220px;
+    margin: 0 auto;
+}
+
+.walk-container3 {
+    position: relative;
+    background-image: url(/img/walk/udstilling3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 340px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.walk-container2 .numre,
+.walk-container2 .udstilling-nr,
+.walk-container3 .numre,
+.walk-container3 .udstilling-nr {
+    position: absolute;
+    width: 10%;
+}
+
+
+#udstilling2 {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#udstilling-nr2 {
+    top: 52%;
+}
+
+
+#toeren,
+#kagedrengen {
+    display: none;
+}
+
 
 
 
@@ -286,9 +374,16 @@ footer img {
 }
 
 
-
-
+/*Tilføjet af Maja*/
 /* @media query! Skærme over XXXpx
+..................................................................*/
+@media only screen and (min-width: 500px) {
+    nav ul #mw {
+        display: none;
+    }
+}
+
+/* @media query! Skærme over 768px
 ..................................................................*/
 @media only screen and (min-width: 768px) {
 
