@@ -82,6 +82,16 @@ article a {
     text-decoration-color: #cb592aff
 }
 
+/* Display none
+..............*/
+
+#udstilling-desktop,
+#nyheder-desktop,
+#events-desktop,
+#banner {
+    display: none;
+}
+
 /* Event
 .............*/
 
@@ -135,57 +145,98 @@ article a {
 
 #dato {
     padding-left: 0.4em;
-    padding-top: 1em; padding-bottom: 0.1em;
+    padding-top: 1em;
+    padding-bottom: 0.1em;
     font-size: 1.1em;
     font-size: 1.1em;
 }
+
 #kalenderbillede {
     width: 3.3%;
 }
 
 #maj,
 #april {
-text-align: center;
+    text-align: center;
     font-size: 1.7em;
-    border-bottom: solid 0.5px #cb592aff; 
+    border-bottom: solid 0.5px #cb592aff;
     padding: 2%;
-    margin: 3%; 
+    margin: 3%;
 }
 
 
 
 
-/* Walk
-....................*/
+/* Museeums walk
+.....................................*/
 
 
-#walk-container {
+.walk-container {
     position: relative;
 }
 
-main #nr1 {
+.walk-container .numre,
+.walk-container .udstilling-nr {
     position: absolute;
-    top: 200px;
-    left: 200px;
+    width: 8%;
 }
 
-main #nr2 {
-    position: absolute;
-    top: 40%;
-    left: 40%;
+.walk-container #nr1 {
+    top: 80%;
+    left: 43%;
 }
 
-main #nr3 {
-    position: absolute;
+.walk-container #nr2 {
     top: 30%;
+    left: 53%;
+}
+
+.walk-container #nr3 {
+    top: 15%;
+    left: 84%;
+}
+
+/* Udstilling2
+...........................*/
+
+.walk-container #udstilling3 {
+    position: absolute;
+    top: 18%;
+    left: 88%;
+
+}
+
+#guidet-tour {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1.5em;
+}
+
+.dot {
+    position: absolute;
+    width: 4%;
+}
+
+#dot-bord {
+    top: 50%;
     left: 50%;
 }
 
-main #nr4 {
-    position: relative;
-    top: 500px;
-    left: 90px;
+#dot-venstre {
+    top: 60%;
+    left: 17%;
 }
+
+#dot-hoejre {
+    top: 65%;
+    left: 83%;
+}
+
+.walk-container img:checked {
+    background-color: aqua;
+}
+
 
 
 
@@ -239,3 +290,51 @@ footer img {
 
 /* @media query! Skærme over XXXpx
 ..................................................................*/
+@media only screen and (min-width: 768px) {
+
+    #udstilling-desktop,
+    #nyheder-desktop,
+    #events-desktop,
+    #banner {
+        display: block;
+    }
+
+    #udstilling-flex {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #udstilling-nyheder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #udstilling-desktop {
+        width: 66%;
+    }
+
+    #nyheder-desktop {
+        width: 32%;
+
+            {
+            margin-top: 7%
+        }
+    }
+
+    .stor-billede {
+        width: 55%;
+    }
+
+    .smaa-billeder {
+        width: 43%;
+    }
+
+    #udstilling-desktop h2 {
+        margin: 1%
+    }
+
+
+}

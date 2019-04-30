@@ -103,9 +103,15 @@
 
 /*
 ---------------Responsive--------------------------*/
+@media only screen and (min-width: 500px) {
+    #menu {
+        margin-top: 2%
+    }
+}
 
-@media only screen and (min-width: 832px) {
-   
+
+@media only screen and (min-width: 768px) {
+
     #menu li {
         width: 20%;
     }
@@ -113,7 +119,7 @@
     #menu .sub-menu li {
         width: auto;
     }
-    
+
     #menu .main-menu {
         display: block;
     }
@@ -167,9 +173,11 @@
     #menu li,
     #toggle-menu,
     #menu a {
-        color: black;}
-        
-    #menu .sub-menu {
-            background-color: #cb592aff;}
+        color: black;
     }
+
+    #menu .sub-menu {
+        background-color: #cb592aff;
+    }
+}
 }
