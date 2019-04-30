@@ -135,10 +135,23 @@ article a {
 
 #dato {
     padding-left: 0.4em;
-    padding-top: 1em;
+    padding-top: 1em; padding-bottom: 0.1em;
     font-size: 1.1em;
     font-size: 1.1em;
 }
+#kalenderbillede {
+    width: 3.3%;
+}
+
+#maj,
+#april {
+text-align: center;
+    font-size: 1.7em;
+    border-bottom: solid 0.5px #cb592aff; 
+    padding: 2%;
+    margin: 3%; 
+}
+
 
 
 
@@ -204,20 +217,6 @@ main #nr4 {
 
 
 
-#kalenderbillede {
-    width: 4%;
-}
-
-#maj,
-#april {
-    text-align: center;
-    font-size: 1.7em;
-    border-bottom: 0.5px solid #cb592aff;
-    border-bottom-width: 0.5px;
-    border-bottom-style: solid;
-    padding: 2%;
-    margin: 3%;
-}
 
 /* Footer
 .........................................................................*/
