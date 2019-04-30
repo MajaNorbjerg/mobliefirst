@@ -58,7 +58,7 @@ header img {
 .........................................................................*/
 
 main {
-    padding: 1%
+    padding: 1%;
 }
 
 main img {
@@ -70,11 +70,11 @@ main img {
 }
 
 #arrangement {
-    padding-right: 0.5%
+    padding-right: 0.5%;
 }
 
 #cafe {
-    padding-left: 0.5%
+    padding-left: 0.5%;
 }
 
 article a {
@@ -86,7 +86,7 @@ article a {
 .............*/
 
 #event-container {
-    position: relative;
+    position: relative; padding-bottom: 0.5em;
 }
 
 #text-block-event {
@@ -129,10 +129,13 @@ article a {
     background-color: white;
     color: black;
     font-size: 2em;
+    padding-bottom: 3%;
 }
 
 #dato {
     padding-left: 0.4em;
+    padding-top: 1em;
+    font-size: 1.1em;
     font-size: 1.1em;
 }
 
@@ -231,7 +234,20 @@ main #nr4 {
     grid-column: 4/5;
 }
 
+#kalenderbillede {
+    width: 4%;
+}
 
+#maj,
+#april {
+    text-align: center;
+    font-size: 1.7em;
+    border-bottom: 0.5px solid #cb592aff;
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    padding: 2%;
+    margin: 3%;
+}
 
 /* Footer
 .........................................................................*/
