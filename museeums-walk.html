@@ -10,14 +10,17 @@
 
     <meta charset="utf-8" />
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-    <title>News | Exercise4</title>
+    <title>Kunsthal Aarhus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow">
     <meta name="keywords" content="XXX" />
     <meta name="description" content="XXX" />
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/burger.css" rel="stylesheet">
+
+
 </head>
 
 
@@ -37,7 +40,7 @@
 -->
     <header>
 
-        <img src="img/kunsthallille.svg" alt="logo" type="file/svg" width="15%">
+        <a href="index.html"><img id="logo" src="img/kunsthallille.svg" alt="logo"></a>
         <h1>Kunsthal Aarhus</h1>
 
         <nav id="menu">
@@ -45,19 +48,27 @@
             <input type="checkbox" id="tm">
             <ul class="main-menu clearfix">
                 <li><a href="index.html">Startside</a></li>
+
                 <li><a href="#">Udstillinger
                         <span class="drop-icon">▾</span>
                         <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
                     </a>
                     <input type="checkbox" id="sm1">
+
                     <ul class="sub-menu">
                         <li id="mw"><a href="museeums-walk.html">Museum Walk</a></li>
-                        <li><a href="https://www.fyrebox.com/play/water-from-ganges-river-i_Ddj0jeZ1V">Quiz</a></li>
+                        <li><a href="https://www.fyrebox.com/play/water-from-ganges-river-i_Ddj0jeZ1V" target="_blank">Quiz</a></li>
                         <li><a href="#">Efter besøget</a></li>
                     </ul>
+
                 </li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="#">Om Kunsthal Aarhus</a></li>
+
+            </ul>
+            <ul id="aabent">
+                <li><strong>Åbent i dag</strong> Kl. 10-18</li>
+                <li><strong>DA</strong>/EN</li>
             </ul>
         </nav>
     </header>

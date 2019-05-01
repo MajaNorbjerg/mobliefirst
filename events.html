@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 
 <!-- Alt generelt
@@ -11,46 +10,67 @@
 
     <meta charset="utf-8" />
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-    <title>News | Exercise4</title>
+    <title>Kunsthal Aarhus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow">
     <meta name="keywords" content="XXX" />
     <meta name="description" content="XXX" />
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-       <link href="css/burger.css" rel="stylesheet">
+    <link href="css/burger.css" rel="stylesheet">
+
+
 </head>
+
+
+
+<!-- Søg efter XXX, for at se rettelser ...............................................................
+-->
+
 
 
 <body>
 
+
+
+
     <!-- Alt indhold i headeren
 ............................................................. 
 -->
-    <header><img src="img/kunsthallille.svg" alt="logo" type="file/svg" width="15%">
-        <h1>Kunsthal Aarhus</h1>
-        
-        <nav id="menu">
-  <label for="tm" id="toggle-menu">Menu <span class="drop-icon">▾</span></label>
-  <input type="checkbox" id="tm">
-  <ul class="main-menu clearfix">
-    <li><a href="index.html">Startside</a></li>
-    <li><a href="#">Udstillinger
-        <span class="drop-icon">▾</span>
-        <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
-      </a>
-      <input type="checkbox" id="sm1">
-      <ul class="sub-menu">
-        <li><a href="museeums-walk.html">Museum Walk</a></li>
-          <li><a href="https://www.fyrebox.com/play/water-from-ganges-river-i_Ddj0jeZ1V">Quiz</a></li>
-        <li><a href="#">Efter besøget</a></li>
-      </ul>
-    </li>
-    <li><a href="events.html">Events</a></li>
-     <li><a href="#">Om Kunsthal Aarhus</a></li>
-  </ul>
-</nav>
+    <header>
 
+        <a href="index.html"><img id="logo" src="img/kunsthallille.svg" alt="logo"></a>
+        <h1>Kunsthal Aarhus</h1>
+
+        <nav id="menu">
+            <label for="tm" id="toggle-menu">Menu <span class="drop-icon">▾</span></label>
+            <input type="checkbox" id="tm">
+            <ul class="main-menu clearfix">
+                <li><a href="index.html">Startside</a></li>
+
+                <li><a href="#">Udstillinger
+                        <span class="drop-icon">▾</span>
+                        <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+                    </a>
+                    <input type="checkbox" id="sm1">
+
+                    <ul class="sub-menu">
+                        <li id="mw"><a href="museeums-walk.html">Museum Walk</a></li>
+                        <li><a href="https://www.fyrebox.com/play/water-from-ganges-river-i_Ddj0jeZ1V" target="_blank">Quiz</a></li>
+                        <li><a href="#">Efter besøget</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#">Om Kunsthal Aarhus</a></li>
+
+            </ul>
+            <ul id="aabent">
+                <li><strong>Åbent i dag</strong> Kl. 10-18</li>
+                <li><strong>DA</strong>/EN</li>
+            </ul>
+        </nav>
     </header>
 
 
@@ -59,30 +79,55 @@
     <!-- Det unikke indhold på siden
 ............................................................. 
 -->
-   
-    <!-- Ændringer til desktop Trine tilføj
-............. 
--->
-  
-    <h2>Aktuelle udstillinger</h2>
-    <p>26.05.2017 - 31.12.2019 Kunsthal Aarhus skulpturpark</p>
-  <img src="img/aktuelud.jpg" width="33%" > 
- <p> 30.01.2019 - 19.05.2019 Kim Beom - Water From Ganges River in the Cup </p>
-  <img src="img/aktuelud2.jpg" width="33%"> 
-  <p> 36.10.2018 - 20.06.2019 THE WORK OF ART AND THE SPIRITUALIZATION OF SELF-EMPOWERMENT</p>
-  <img src="img/aktuelud3.jpg" width="33%">
-   
-    <!-- Ændringer til desktop
-............. 
--->
+
+
+
+
+
     <main>
-        <article class="event">
-            <h2>Events</h2>
-            <p id="dato"> Vælg dato <a href=""> <img id="kalenderbillede" src="img/kalender.svg"></a> </p>
-            <p id="april">April</p>
-            <div id="event-container">
+        <div class="event">
+            <h2 id="overskriftevents">Events</h2>
+            <a id="eventfb" href="https://www.facebook.com/pg/kunsthalaarhus/events/?ref=page_internal"> Find Aarhus Kunsthals begivenheder på Facebook her </a>
+            <section>
+                <p id="dato"> Vælg dato <a href="">
+                        <img id="kalenderbillede" src="img/kalender.svg" alt="vælgdatobillede"></a></p>
+            </section>
+
+            <!-- Ændringer til desktop Trine tilføj
+............. 
+-->
+            <article id="aktuelle-udstillinger">
+                <h2>Aktuelle udstillinger</h2>
+                <div id="trebilleder">
+
+                    <section>
+                        <p>26.05.2017 - 31.12.2019 <br>Kunsthal Aarhus skulpturpark</p>
+                        <img class="aktuelbillede" src="img/aktuelud.jpg" alt="aktueludbillede1">
+                    </section>
+
+                    <section>
+                        <p> 30.01.2019 - 19.05.2019 <br>Kim Beom - Water From Ganges River in the Cup</p>
+                        <img class="aktuelbillede" src="img/aktuelud2.jpg" alt="aktueludbillede2">
+                    </section>
+
+                    <section>
+                        <p> 36.10.2018 - 20.06.2019 <br> The Work Of Art And The Spiritualization </p>
+                        <img class="aktuelbillede" src="img/aktuelud3.jpg" alt="aktueludbillede3">
+                    </section>
+
+                </div>
+
+            </article>
+        </div>
+        <!-- Ændringer til desktop
+............. 
+-->
+
+        <p id="april">April</p>
+        <div class="kalender-desktop">
+            <article class="event-container">
                 <img src="img/ursula-nistrup.kalender.jpg" alt="Ursula Nistrup">
-                <div id="text-block-event">
+                <div class="text-block-event">
                     <h3>Artist talk / <br>
                         Ursula Nistrup</h3>
                     <h4>26.04.2019 <br>
@@ -93,56 +138,56 @@
                         til artist talk med billedkunstner </p>
                     <a href="https://www.facebook.com/pg/kunsthalaarhus/events/?ref=page_internal">Læs mere på Facebook</a>
                 </div>
-            </div>
-        </article>
+            </article>
 
-        <article class="event">
-            <div id="event-container">
-                <img src="img/curate-kalender.jpg" alt="How we curate">
-                <div id="text-block-event">
-                    <h3> How We Curate</h3>
-                    <h4>24.04.2019 <br>
-                        Kl.19-20:30</h4>
-                    <p>På kunstinstitutioner, udstillings-
-                        steder og i det offentlige rum ser vi
-                        resultaterne af kuratorers arbejde,
-                        men som besøgende får vi sjældent
-                        adgang til de praktiske og refleksive
-                        processer, der ligger forud for
-                        udstillingerne.</p>
-                    <a href="https://www.facebook.com/pg/kunsthalaarhus/events/?ref=page_internal">Læs mere på Facebook</a>
+            <article class="event">
+                <div class="event-container">
+                    <img src="img/curate-kalender.jpg" alt="How we curate">
+                    <div class="text-block-event">
+                        <h3> How We Curate</h3>
+                        <h4>24.04.2019 <br>
+                            Kl.19-20:30</h4>
+                        <p>På kunstinstitutioner, udstillings-
+                            steder og i det offentlige rum ser vi
+                            resultaterne af kuratorers arbejde,
+                            men som besøgende får vi sjældent
+                            adgang til de praktiske og refleksive
+                            processer, der ligger forud for
+                            udstillingerne.</p>
+                        <a href="https://www.facebook.com/pg/kunsthalaarhus/events/?ref=page_internal">Læs mere på Facebook</a>
+                    </div>
                 </div>
-            </div>
-        </article>
-        
+            </article>
+        </div>
+
         <p id="maj">Maj</p>
-        
-        <article class="event">
-            <div id="event-container">
-                <img src="img/celine-condorelli.jpg" alt="celine condorelli">
-                <div id="text-block-event">
-                    <h3> Forelæsning / <br> Celiné Condorelli</h3>
-                    <h4>03.05.2019 <br>
-                        Kl.19-20</h4>
-                    <p>Forud for åbningen af Céline Condorellis første udstilling i Danmark holder hun en forelæsning i sin nye installation, Vært, i Kunsthal Aarhus. Installationen, som består et af stort, sektionsopdelt gardin, er både et kunstværk og en udstillingsarkitektur.</p>
-                    <a href="https://www.facebook.com/pg/kunsthalaarhus/events/?ref=page_internal">Læs mere på Facebook</a>
+        <div class="kalender-desktop">
+            <article class="event">
+                <div class="event-container">
+                    <img src="img/celine-condorelli.jpg" alt="celine condorelli">
+                    <div class="text-block-event">
+                        <h3> Forelæsning / <br> Celiné Condorelli</h3>
+                        <h4>03.05.2019 <br>
+                            Kl.19-20</h4>
+                        <p>Forud for åbningen af Céline Condorellis første udstilling i Danmark holder hun en forelæsning i sin nye installation, Vært, i Kunsthal Aarhus. Installationen, som består et af stort, sektionsopdelt gardin, er både et kunstværk og en udstillingsarkitektur.</p>
+                        <a href="https://www.facebook.com/pg/kunsthalaarhus/events/?ref=page_internal">Læs mere på Facebook</a>
+                    </div>
                 </div>
-            </div>
-        </article>
+            </article>
 
-        <article class="event">
-            <div id="event-container">
-                <img src="img/volume1.jpg" alt="EURYDIKE? volume 1">
-                <div id="text-block-event">
-                    <h3> EURYDIKE? volume 1</h3>
-                    <h4>09.05.2019 <br>
-                        Kl.16-17</h4>
-                    <p>EURYDIKE? volume 1 er første del af et værk i to dele skabt af Helmut Oehring og hans team. Det handler om de kvindelige perspektiver på maskuline dramaer: Modet til at opretholde et håb i katastrofal mørke og uventede ulykker, sjælelig lammelse og kulturel nøgenhed.</p>
-                    <a href="https://www.facebook.com/pg/kunsthalaarhus/events/?ref=page_internal">Læs mere på Facebook</a>
+            <article class="event">
+                <div class="event-container">
+                    <img src="img/volume1.jpg" alt="EURYDIKE? volume 1">
+                    <div class="text-block-event">
+                        <h3> EURYDIKE? volume 1</h3>
+                        <h4>09.05.2019 <br>
+                            Kl.16-17</h4>
+                        <p>EURYDIKE? volume 1 er første del af et værk i to dele skabt af Helmut Oehring og hans team. Det handler om de kvindelige perspektiver på maskuline dramaer: Modet til at opretholde et håb i katastrofal mørke og uventede ulykker, sjælelig lammelse og kulturel nøgenhed.</p>
+                        <a href="https://www.facebook.com/pg/kunsthalaarhus/events/?ref=page_internal">Læs mere på Facebook</a>
+                    </div>
                 </div>
-            </div>
-        </article>
-
+            </article>
+        </div>
 
     </main>
 
@@ -157,19 +202,19 @@
             <p>Info@kunsthal.dk</p>
         </div>
         <div id="ikon-footer">
-           <a href="https://www.facebook.com/kunsthalaarhus/">
-            <img src="img/ikoner/fb.svg" alt="facebook">
+            <a href="https://www.facebook.com/kunsthalaarhus/">
+                <img src="img/ikoner/fb.svg" alt="facebook">
             </a>
             <a href="https://www.instagram.com/kunsthalaarhus/">
-            <img src="img/ikoner/insta.svg" alt="instagram">
+                <img src="img/ikoner/insta.svg" alt="instagram">
             </a>
             <a href="https://twitter.com/KunsthalAarhus">
-            <img src="img/ikoner/twitter.svg" alt="twitter">
+                <img src="img/ikoner/twitter.svg" alt="twitter">
             </a>
             <a href="https://vimeo.com/user16006879">
-            <img src="img/ikoner/vimeo.svg" alt="vimeo">
+                <img src="img/ikoner/vimeo.svg" alt="vimeo">
             </a>
-            </div>
+        </div>
 
     </footer>
 
